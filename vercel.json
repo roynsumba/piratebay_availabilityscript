@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pbscraper.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "pbscraper.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
